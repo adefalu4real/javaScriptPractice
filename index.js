@@ -465,26 +465,26 @@
 // const names = nameFirst.concat(" q", "Doe");
 // console.log(name, names);
 
-const calcAverage = (a, b, c) => (a + b + c) / 3;
-let delvScore = calcAverage(44, 23, 71);
-let koalasScore = calcAverage(65, 55, 49);
-console.log(delvScore, koalasScore);
-const checkWinner = function (avgDelphin, avgKoalas) {
-  if (avgDelphin >= 2 * avgKoalas) {
-    console.log(`delphis win the game (${avgDelphin} vs. ${avgKoalas})`);
-  } else if (avgKoalas >= 2 * avgDelphin) {
-    console.log(`koalas win the game (${avgKoalas} vs. ${avgDelphin})`);
-  } else {
-    console.log("no winner");
-  }
-};
-checkWinner(delvScore, koalasScore);
-checkWinner(576, 111);
-// Test 2
-delvScore = calcAverage(40, 20, 25);
-koalasScore = calcAverage(83, 55, 56);
-console.log(delvScore, koalasScore);
-checkWinner(delvScore, koalasScore);
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
+// let delvScore = calcAverage(44, 23, 71);
+// let koalasScore = calcAverage(65, 55, 49);
+// console.log(delvScore, koalasScore);
+// const checkWinner = function (avgDelphin, avgKoalas) {
+//   if (avgDelphin >= 2 * avgKoalas) {
+//     console.log(`delphis win the game (${avgDelphin} vs. ${avgKoalas})`);
+//   } else if (avgKoalas >= 2 * avgDelphin) {
+//     console.log(`koalas win the game (${avgKoalas} vs. ${avgDelphin})`);
+//   } else {
+//     console.log("no winner");
+//   }
+// };
+// checkWinner(delvScore, koalasScore);
+// checkWinner(576, 111);
+// // Test 2
+// delvScore = calcAverage(40, 20, 25);
+// koalasScore = calcAverage(83, 55, 56);
+// console.log(delvScore, koalasScore);
+// checkWinner(delvScore, koalasScore);
 
 /*
 1. write a function that reverse a number
@@ -503,48 +503,233 @@ Test Data: const favorite = 'I eat apples the whole day'
 5. Write a javascript function that replaces Hello with Hi in the test data below.
 Test data: const greetings = 'Hello World'
 */
-const nameSorted = () => {
-  let names = ["p", "a", "r", "a", "n", "o", "i", "d"];
-  let sortedNames = names.sort();
-  return sortedNames;
-};
-const sorting = nameSorted();
-console.log(sorting);
+// const nameSorted = () => {
+//   let names = "pranoid";
+//   let names2 = names.split("");
+//   let sortedNames = names2.sort();
+//   let nameJoin = sortedNames.join();
+//   return nameJoin;
+// };
+// const sorting = nameSorted();
+// console.log(sorting);
 
-const numberReverse = function () {
-  let number = 12345;
-  let num = number.toString();
-  let num2 = num.split("");
-  let num3 = num2.reverse();
-  let num4 = num3.join("");
-  return num4;
-};
-const reverseNum = numberReverse();
-console.log(reverseNum);
+// const numberReverse = function () {
+//   let number = 12345;
+//   let num = number.toString();
+//   let num2 = num.split("");
+//   let num3 = num2.reverse();
+//   let num4 = num3.join("");
+//   return num4;
+// };
+// const reverseNum = numberReverse();
+// console.log(reverseNum);
 
-// 3
-const stringDataF = () => {
-  const stringData = "John Doe";
-  const sliptStringData = stringData.split();
-  return sliptStringData;
-};
-const arrayDataCaller = stringDataF();
-console.log(arrayDataCaller);
+// // 3
+// const stringDataF = () => {
+//   const stringData = "John Doe";
+//   const sliptStringData = stringData.split();
+//   return sliptStringData;
+// };
+// const arrayDataCaller = stringDataF();
+// console.log(arrayDataCaller);
 
-// 4
-const appleExtract = () => {
-  const favorite = "I eat apples the whole day";
-  const cutFavorite = favorite.substr(6, 6);
-  return cutFavorite;
-};
-const appleCut = appleExtract();
-console.log(appleCut);
+// // 4
+// const appleExtract = () => {
+//   const favorite = "I eat apples the whole day";
+//   const cutFavorite = favorite.substr(6, 6);
+//   return cutFavorite;
+// };
+// const appleCut = appleExtract();
+// console.log(appleCut);
 
-// 5
-const textChange = () => {
-  const greetings = "Hello World";
-  const replaceGreeting = greetings.replace("Hello World", "Hi lovers");
-  return replaceGreeting;
+// // 5
+// const textChange = () => {
+//   const greetings = "Hello World";
+//   const replaceGreeting = greetings.replace("Hello World", "Hi lovers");
+//   return replaceGreeting;
+// };
+// const greetingChange = textChange();
+// console.log(greetingChange);
+
+// const fruitNames = ["apple", "mango", "banana"];
+// console.log(fruitNames[1]);
+// fruitNames[1] = "melon";
+// console.log(fruitNames);
+
+// const fruit = ["apple", "mango", "banana"];
+// const names = "philip, James, Halem, prosper, Dammy, Waliyyullahi";
+// const year = 1908;
+// const arrayData = [fruit, names, year];
+// console.log(arrayData);
+
+// const calculateMark = function (mark) {
+//   return 100 - mark;
+// };
+// const mark = [65, 30, 75, 42];
+// const firstMark = calculateMark(mark[0]);
+
+// const secondMark = calculateMark(mark[1]);
+// const thirddMark = calculateMark(mark[2]);
+// const fourthMark = calculateMark(mark[3]);
+
+// console.log(firstMark, secondMark, thirddMark, fourthMark);
+// // for loops
+// const benchMark = 100;
+// const marks = [60, 30, 75, 42, 60, 80, 90, 35, 57];
+// for (let i = 0; i < marks.length; i++) {
+//   console.log(benchMark - marks[i]);
+// }
+
+// const getEven = [22, 10, 11, 13, 39, 21, 50, 56, 57];
+
+// for (let i = 0; i < getEven.length; i++) {
+//   if (getEven[i] % 2 === 0) console.log(getEven[i]);
+// }
+// for (let i = 0; i < getEven.length; i++) {
+//   if (getEven[i] % 2 !== 0) console.log(getEven[i]);
+// }
+/*
+1. given an array with elements, return  the  largest element in the array using javascript function;
+
+Test data: const arrayNumber = [20, 21, 18, 15, 10, 9, 8, 7, 45]
+
+
+2. using javascript function, write a program that returns the multiples of 3 and 5 between 0 and 100;
+*/
+
+// const arrayNum = function () {
+//   const arrayNumber = [20, 21, 18, 15, 10, 9, 8, 7, 45];
+//   for (i = 0; i < arrayNumber.length; i++)
+//     if (arrayNumber[i] > 21) {
+//       return arrayNumber[i];
+//     }
+// };
+// const getLargestNum = arrayNum();
+// console.log(getLargestNum);
+// const multiplesOfNumbers = () => {
+//   for (let i = 0; i < 100; i++) {
+//     if (i % 3 === 0) {
+//       console.log(i);
+//     }
+//   }
+// };
+// multiplesOfNumbers();
+
+// const multiplesOfNumbers5 = () => {
+//   for (let i = 0; i < 100; i++) {
+//     if (i % 3 === 0) {
+//       console.log(i);
+//     }
+//   }
+// };
+// multiplesOfNumbers5();
+
+// select number ramdomly
+// const numberToBeSorted = [40, 100, 1, 5, 25, 10];
+// function sortArray() {
+//   for (let i = numberToBeSorted.length - 1; i > 0; i--) {
+//     let j = Math.floor(Math.random() * (i + 1));
+//     let k = numberToBeSorted[i];
+//     numberToBeSorted[i] = numberToBeSorted[j];
+//     numberToBeSorted[j] = k;
+//   }
+//   return numberToBeSorted;
+// }
+// const getRandomArray = sortArray(numberToBeSorted);
+// console.log(getRandomArray);
+
+// array code challenge
+
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// };
+// const bills = [125, 555, 44];
+// const tip = [calcTip(bills[0]), calcTip(bills[2]), calcTip(bills[2])];
+// const total = [bills[0] + tip[0], bills[1] + tip[1], bills[2] + tip[2]];
+// console.log(bills, tip, total);
+
+// sum of num 1-100
+// const oneTonHundred = () => {
+//   var sum = 0;
+//   for (let i = 1; i <= 100; i++) {
+//     console.log(i);
+//     sum += i;
+//   }
+//   console.log(sum);
+// };
+
+// oneTonHundred();
+
+// Object
+// object method
+// write this statement using the function expression in the object.
+// John at age 30 is owning $50 loan and as well has no mortgage.
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 30,
+//   loan: 50,
+//   interest: 0.1,
+//   hasMortgage: false,
+//   hobbies: ["coding", "music", "reading"],
+//   job: "student",
+//   friends: ["Smith", "Steven", "Gary"],
+//   calcLoan: function () {
+//     return `${this.firstName} at ${this.age} is owning $${
+//       this.loan
+//     } and as well has  ${this.hasMortgage ? "a" : "no"} mortgage`;
+//   },
+// };
+// console.log(person.calcLoan());
+// // array of object
+// const person2 = [
+//   { id: 1, name: "John", age: 30 },
+//   { id: 2, name: "Bola", age: 42 },
+//   { id: 3, name: "Tobi", age: 18 },
+// ];
+// console.table(person2);
+
+// Write a JavaScript function that accepts a string as a parameter and
+// converts the first letter of each word of the string in upper case.
+//Test Data: 'the quick brown fox jumped over the lazy dog'
+
+// function titleCase(upperWord) {
+//   let word = upperWord.toLowerCase().split(" ");
+//   for (var i = 0; i < word.length; i++) {
+//     word[i] = word[i][0].toUpperCase() + word[i].slice(1);
+//   }
+//   console.log(word.join(" "));
+//   return word;
+// }
+// titleCase("the quick brown fox jumped over the lazy dog");
+
+const mark = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+  calBmi: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+  getSummary: function () {
+    if (mark.calBmi() > john.calBmi());
+    return `${mark.fullName} BMI ${Math.floor(this.bmi)} is greater than ${
+      john.fullName
+    } ${Math.floor(john.bmi)}`;
+  },
 };
-const greetingChange = textChange();
-console.log(greetingChange);
+const john = {
+  fullName: "john smith",
+  mass: 92,
+  height: 1.95,
+  calBmi: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+mark.getSummary();
+console.log(mark.getSummary());
+mark.calBmi();
+console.log(mark.calBmi());
+john.calBmi();
+console.log(john.calBmi());
